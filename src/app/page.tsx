@@ -1,6 +1,5 @@
-import Image from 'next/image';
-
-import { Flex, Box, Grid, Text, Link, css } from '@kuma-ui/core';
+import { TbArrowsDiff } from 'react-icons/tb';
+import { Box, Grid, Text, Link, css } from '@kuma-ui/core';
 
 const tileStyle = css`
     background: #fefefe;
@@ -10,6 +9,8 @@ const tileStyle = css`
     &:hover {
         box-shadow: 0 0 0.4em #0005;
     }
+    display: block;
+    height: 100px;
 `;
 
 export default function Home() {
@@ -17,18 +18,28 @@ export default function Home() {
         <main>
             <Grid gridTemplateColumns="repeat(2, 1fr)" gap={6} pt={10} px={10}>
                 <Link href="/diffViewer" className={tileStyle}>
+                    <p
+                        className={css`
+                            text-align: center;
+                            font-size: 24px;
+                            padding-top: 10px;
+                            margin-bottom: 4px;
+                        `}
+                    >
+                        <TbArrowsDiff />
+                    </p>
                     <Text color="black" fontSize="16px" textAlign="center" fontWeight="bolder">
                         Diff Viewer
                     </Text>
                 </Link>
-                <Box height="80px" as={'button'} className={tileStyle}>
+                <Box as={'button'} className={tileStyle}>
                     <Text color="black" fontSize="16px">
                         Coming soon...
                     </Text>
                 </Box>
-                <Box height="80px" className={tileStyle} />
-                <Box height="80px" className={tileStyle} />
-                <Box height="80px" className={tileStyle} />
+                <Box className={tileStyle} />
+                <Box className={tileStyle} />
+                <Box className={tileStyle} />
             </Grid>
         </main>
     );
