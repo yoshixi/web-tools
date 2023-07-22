@@ -1,10 +1,9 @@
 'use client';
 
-import { PropsWithChildren } from 'react';
 import ReactDiffViewer from 'react-diff-viewer';
-import type { ChangeEvent } from 'react';
+import type { ChangeEventHandler } from 'react';
 import { useState } from 'react';
-import { Box, Grid, Input } from '@kuma-ui/core';
+import { Box, Grid, Input, css } from '@kuma-ui/core';
 
 type Props = {
     oldValue: string;
@@ -16,21 +15,38 @@ export const DiffViewer = ({ oldValue, newValue }: Props) => {
 };
 
 interface TextInputProps {
-    onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+    onChange: ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>;
 }
 
 const TextInput = ({ onChange }: TextInputProps) => {
-    return <Input type="text" minHeight={200} onChange={onChange}></Input>;
+    return (
+        <Input
+            as="textarea"
+            minHeight={200}
+            onChange={onChange}
+            className={css`
+                resize: vertical;
+                outline: none;
+                padding: 8px;
+                background: none;
+                min-height: 250px;
+                font-family: monospace;
+                white-space: pre;
+                border-radius: 4px;
+                color: #000;
+            `}
+        ></Input>
+    );
 };
 
 export const DiffPage = () => {
     const [newText, setNewText] = useState('');
     const [oldText, setOldText] = useState('');
 
-    const handleNewTextChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const handleNewTextChange: ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement> = (event) => {
         setNewText(event.target.value);
     };
-    const handleOldTextChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const handleOldTextChange: ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement> = (event) => {
         setOldText(event.target.value);
     };
     return (
