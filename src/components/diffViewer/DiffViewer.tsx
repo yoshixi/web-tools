@@ -33,6 +33,7 @@ const TextInput = ({ onChange }: TextInputProps) => {
                 font-family: monospace;
                 white-space: pre;
                 border-radius: 4px;
+                color: #000;
             `}
         ></Input>
     );
