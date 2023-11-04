@@ -1,4 +1,4 @@
-import { TbArrowsDiff } from 'react-icons/tb';
+import { TbArrowsDiff, TbRun } from 'react-icons/tb';
 import { Box, Grid, Text, Link, css } from '@kuma-ui/core';
 
 const tileStyle = css`
@@ -33,9 +33,21 @@ export default function Home() {
                     </Text>
                 </Link>
                 <Box as={'button'} className={tileStyle}>
-                    <Text color="black" fontSize="16px">
-                        Coming soon...
-                    </Text>
+                    <Link href="/marathonPaceCalculator" className={tileStyle}>
+                        <p
+                            className={css`
+                                text-align: center;
+                                font-size: 24px;
+                                padding-top: 10px;
+                                margin-bottom: 4px;
+                            `}
+                        >
+                            <TbRun />
+                        </p>
+                        <Text color="black" fontSize="16px" textAlign="center" fontWeight="bolder">
+                            Marathon Pace Calculator
+                        </Text>
+                    </Link>
                 </Box>
                 <Box className={tileStyle} />
                 <Box className={tileStyle} />
