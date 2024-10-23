@@ -7,16 +7,16 @@ settings:
 dependencies:
   '@kuma-ui/core':
     specifier: ^1.0.1
-    version: 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
+    version: 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
   '@types/node':
     specifier: 20.8.10
     version: 20.8.10
   '@types/react':
-    specifier: 18.2.34
-    version: 18.2.34
+    specifier: 18.3.12
+    version: 18.3.12
   '@types/react-dom':
-    specifier: 18.2.14
-    version: 18.2.14
+    specifier: 18.3.1
+    version: 18.3.1
   eslint:
     specifier: 8.53.0
     version: 8.53.0
@@ -25,19 +25,19 @@ dependencies:
     version: 13.5.6(eslint@8.53.0)(typescript@5.1.6)
   next:
     specifier: 13.5.6
-    version: 13.5.6(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+    version: 13.5.6(@babel/core@7.22.9)(react-dom@18.3.1)(react@18.3.1)
   react:
-    specifier: 18.2.0
-    version: 18.2.0
+    specifier: 18.3.1
+    version: 18.3.1
   react-diff-viewer:
     specifier: ^3.1.1
-    version: 3.1.1(react-dom@18.2.0)(react@18.2.0)
+    version: 3.1.1(react-dom@18.3.1)(react@18.3.1)
   react-dom:
-    specifier: 18.2.0
-    version: 18.2.0(react@18.2.0)
+    specifier: 18.3.1
+    version: 18.3.1(react@18.3.1)
   react-icons:
     specifier: ^4.10.1
-    version: 4.10.1(react@18.2.0)
+    version: 4.10.1(react@18.3.1)
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -45,7 +45,7 @@ dependencies:
 devDependencies:
   '@kuma-ui/next-plugin':
     specifier: ^1.0.3
-    version: 1.0.3(@babel/core@7.22.9)(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)(webpack@5.88.1)
+    version: 1.0.3(@babel/core@7.22.9)(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)(webpack@5.88.1)
   eslint-config-prettier:
     specifier: ^9.0.0
     version: 9.0.0(eslint@8.53.0)
@@ -1650,12 +1650,12 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@kuma-ui/babel-plugin@1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0):
+  /@kuma-ui/babel-plugin@1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1):
     resolution: {integrity: sha512-XurGT5vh6gsreV1CuJYTzYC5ZtJazviaDPNzsbd3Z7/tLbnVyEGtnMQJrW2/yh1B53ZF+lfUx99mEVFm/JpwSw==}
     dependencies:
       '@babel/core': 7.22.9
-      '@kuma-ui/compiler': 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
-      '@kuma-ui/core': 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
+      '@kuma-ui/compiler': 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
+      '@kuma-ui/core': 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
       '@kuma-ui/sheet': 1.0.1
       '@kuma-ui/system': 1.0.1
       ts-pattern: 5.0.3
@@ -1666,10 +1666,10 @@ packages:
       - supports-color
     dev: true
 
-  /@kuma-ui/compiler@1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0):
+  /@kuma-ui/compiler@1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1):
     resolution: {integrity: sha512-syR8P+1PzOarIma84g6R0RkQoZE0kqnOfxjCLnFAn306BNiAWzfIW9+r0PPiMkx4yw2C/7XxOPQn1nizyEke0w==}
     dependencies:
-      '@kuma-ui/core': 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
+      '@kuma-ui/core': 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
       '@kuma-ui/sheet': 1.0.1
       '@kuma-ui/system': 1.0.1
       ts-morph: 19.0.0
@@ -1680,7 +1680,7 @@ packages:
       - react
     dev: true
 
-  /@kuma-ui/core@1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0):
+  /@kuma-ui/core@1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1):
     resolution: {integrity: sha512-f0rXgApOBM9GKlBciyf2mpPdRSfJrpSLKq1vhln6fOpWZEjjo0R10aYDg9NEyPyOo8BgCEwWtLiikfPsl0xm+w==}
     peerDependencies:
       '@types/react': ^18.0.32
@@ -1694,14 +1694,14 @@ packages:
     dependencies:
       '@kuma-ui/sheet': 1.0.1
       '@kuma-ui/system': 1.0.1
-      '@types/react': 18.2.34
+      '@types/react': 18.3.12
       '@types/stylis': 4.2.0
-      next: 13.5.6(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
+      next: 13.5.6(@babel/core@7.22.9)(react-dom@18.3.1)(react@18.3.1)
+      react: 18.3.1
       stylis: 4.3.0
       ts-pattern: 5.0.3
 
-  /@kuma-ui/next-plugin@1.0.3(@babel/core@7.22.9)(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)(webpack@5.88.1):
+  /@kuma-ui/next-plugin@1.0.3(@babel/core@7.22.9)(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)(webpack@5.88.1):
     resolution: {integrity: sha512-AN6uCdDW59qA5p8fLpe9F/JkVOQG9kICRJ1qHR5XlZc7o3aoV5xTKByqVZBC3mEdos4lJpS4fvi2J0niJvkPcw==}
     peerDependencies:
       '@types/react': ^18.0.32
@@ -1715,13 +1715,13 @@ packages:
       '@babel/preset-env': 7.22.9(@babel/core@7.22.9)
       '@babel/preset-react': 7.22.5(@babel/core@7.22.9)
       '@babel/preset-typescript': 7.22.5(@babel/core@7.22.9)
-      '@kuma-ui/core': 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
-      '@kuma-ui/webpack-plugin': 1.0.2(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)(webpack@5.88.1)
-      '@types/react': 18.2.34
+      '@kuma-ui/core': 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
+      '@kuma-ui/webpack-plugin': 1.0.2(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)(webpack@5.88.1)
+      '@types/react': 18.3.12
       babel-loader: 9.1.3(@babel/core@7.22.9)(webpack@5.88.1)
       browserslist: 4.21.5
-      next: 13.5.6(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
+      next: 13.5.6(@babel/core@7.22.9)(react-dom@18.3.1)(react@18.3.1)
+      react: 18.3.1
       webpack: 5.88.1
     transitivePeerDependencies:
       - '@babel/core'
@@ -1739,12 +1739,12 @@ packages:
       '@kuma-ui/sheet': 1.0.1
       csstype: 3.1.2
 
-  /@kuma-ui/webpack-plugin@1.0.2(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)(webpack@5.88.1):
+  /@kuma-ui/webpack-plugin@1.0.2(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)(webpack@5.88.1):
     resolution: {integrity: sha512-GgsrMqN8E7oJ2WO2gJNSIwsWLRKke+Fo1rzSdMSAU78kGMExQGQg5LMymd305m+ekjYCo20k4yICP/mrumJakg==}
     peerDependencies:
       webpack: ^5
     dependencies:
-      '@kuma-ui/babel-plugin': 1.0.1(@types/react@18.2.34)(next@13.5.6)(react@18.2.0)
+      '@kuma-ui/babel-plugin': 1.0.1(@types/react@18.3.12)(next@13.5.6)(react@18.3.1)
       '@kuma-ui/sheet': 1.0.1
       '@kuma-ui/system': 1.0.1
       esbuild: 0.18.12
@@ -1929,21 +1929,17 @@ packages:
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react-dom@18.2.14:
-    resolution: {integrity: sha512-V835xgdSVmyQmI1KLV2BEIUgqEuinxp9O4G6g3FqO/SqLac049E53aysv0oEFD2kHfejeKU+ZqL2bcFWj9gLAQ==}
+  /@types/react-dom@18.3.1:
+    resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
     dependencies:
-      '@types/react': 18.2.34
+      '@types/react': 18.3.12
     dev: false
 
-  /@types/react@18.2.34:
-    resolution: {integrity: sha512-U6eW/alrRk37FU/MS2RYMjx0Va2JGIVXELTODaTIYgvWGCV4Y4TfTUzG8DdmpDNIT0Xpj/R7GfyHOJJrDttcvg==}
+  /@types/react@18.3.12:
+    resolution: {integrity: sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==}
     dependencies:
       '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
       csstype: 3.1.2
-
-  /@types/scheduler@0.16.3:
-    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
   /@types/stylis@4.2.0:
     resolution: {integrity: sha512-n4sx2bqL0mW1tvDf/loQ+aMX7GQD3lc3fkCMC55VFNDu/vBOabO+LTIeXKM14xK0ppk5TUGcWRjiSpIlUpghKw==}
@@ -4076,7 +4072,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /next@13.5.6(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
+  /next@13.5.6(@babel/core@7.22.9)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-Y2wTcTbO4WwEsVb4A8VSnOsG1I9ok+h74q0ZdxkwM3EODqrs4pasq7O0iUxbcS9VtWMicG7f3+HAj0r1+NtKSw==}
     engines: {node: '>=16.14.0'}
     hasBin: true
@@ -4096,9 +4092,9 @@ packages:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001515
       postcss: 8.4.31
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.22.9)(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      styled-jsx: 5.1.1(@babel/core@7.22.9)(react@18.3.1)
       watchpack: 2.4.0
     optionalDependencies:
       '@next/swc-darwin-arm64': 13.5.6
@@ -4389,7 +4385,7 @@ packages:
       safe-buffer: 5.2.1
     dev: true
 
-  /react-diff-viewer@3.1.1(react-dom@18.2.0)(react@18.2.0):
+  /react-diff-viewer@3.1.1(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-rmvwNdcClp6ZWdS11m1m01UnBA4OwYaLG/li0dB781e/bQEzsGyj+qewVd6W5ztBwseQ72pO7nwaCcq5jnlzcw==}
     engines: {node: '>= 8'}
     peerDependencies:
@@ -4402,33 +4398,33 @@ packages:
       emotion: 10.0.27
       memoize-one: 5.2.1
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
-  /react-dom@18.2.0(react@18.2.0):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  /react-dom@18.3.1(react@18.3.1):
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.3.1
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      react: 18.3.1
+      scheduler: 0.23.2
 
-  /react-icons@4.10.1(react@18.2.0):
+  /react-icons@4.10.1(react@18.3.1):
     resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
     peerDependencies:
       react: '*'
     dependencies:
-      react: 18.2.0
+      react: 18.3.1
     dev: false
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
@@ -4589,8 +4585,8 @@ packages:
       is-regex: 1.1.4
     dev: false
 
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  /scheduler@0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
     dependencies:
       loose-envify: 1.4.0
 
@@ -4795,7 +4791,7 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  /styled-jsx@5.1.1(@babel/core@7.22.9)(react@18.2.0):
+  /styled-jsx@5.1.1(@babel/core@7.22.9)(react@18.3.1):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -4810,7 +4806,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.9
       client-only: 0.0.1
-      react: 18.2.0
+      react: 18.3.1
 
   /stylis@4.3.0:
     resolution: {integrity: sha512-E87pIogpwUsUwXw7dNyU4QDjdgVMy52m+XEOPEKUn161cCzWjjhPSQhByfd1CcNvrOLnXQ6OnnZDwnJrz/Z4YQ==}
